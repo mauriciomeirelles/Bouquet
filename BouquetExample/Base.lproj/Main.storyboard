@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BouquetExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7H-53-nkG">
+                                <rect key="frame" x="150.5" y="452" width="73" height="30"/>
+                                <state key="normal" title="I'm a Bride"/>
+                                <connections>
+                                    <action selector="btBrideSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVt-eF-BJ0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bouquet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Par-O5-Qjf">
+                                <rect key="frame" x="155" y="323" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77Y-r3-mf0">
+                                <rect key="frame" x="129" y="452" width="117" height="30"/>
+                                <state key="normal" title="Start Countdown"/>
+                                <connections>
+                                    <action selector="tossBouquet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMt-ho-Cge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Par-O5-Qjf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="42v-jF-LKV"/>
+                            <constraint firstItem="77Y-r3-mf0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BdK-33-MXs"/>
+                            <constraint firstItem="Par-O5-Qjf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="llc-FP-I6n"/>
+                            <constraint firstItem="e7H-53-nkG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tF2-bN-3Uo"/>
+                            <constraint firstItem="77Y-r3-mf0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="ta9-mP-VAq"/>
+                            <constraint firstItem="e7H-53-nkG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="xt2-Fh-7Pw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btBride" destination="e7H-53-nkG" id="2bG-gB-G93"/>
+                        <outlet property="btStartCountdown" destination="77Y-r3-mf0" id="Y37-p4-y98"/>
+                        <outlet property="lblDescription" destination="Par-O5-Qjf" id="YnX-BA-bUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
